@@ -1,13 +1,11 @@
 package BDD.Project.Pakage;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.Test;
 
-@SpringBootTest
-class BddOrderManagementSystemProjectApplicationTests {
+public class BddOrderManagementSystemProjectApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }

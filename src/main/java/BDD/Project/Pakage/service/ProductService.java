@@ -1,2 +1,36 @@
-package BDD.Project.Pakage;public class service {
+package BDD.Project.Pakage.service;
+
+import BDD.Project.Pakage.model.Product;
+import BDD.Project.Pakage.repo.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class ProductService {
+
+    @Autowired
+    private ProductRepository productRepository;
+
+    public Product createProduct(Product product) {
+        return productRepository.save(product);
+    }
+
+    public List<Product> getAllProducts() {  // Corrected return type
+        return productRepository.findAll();
+    }
+
+    public Optional<Product> getProductById(Long id) {  // Corrected return type
+        return productRepository.findById(id);
+    }
+
+    public Product updateProduct(Product product) {  // Corrected type
+        return productRepository.save(product);
+    }
+
+    public void deleteProduct(Long id) {
+        productRepository.deleteById(id);
+    }
 }

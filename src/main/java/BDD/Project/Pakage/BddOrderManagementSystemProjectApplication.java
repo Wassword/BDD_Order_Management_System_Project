@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BddOrderManagementSystemProjectApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BddOrderManagementSystemProjectApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(BddOrderManagementSystemProjectApplication.class, args);
+    }
 
 }
